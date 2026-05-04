@@ -196,3 +196,30 @@ After model caching, runs are typically local-only.
 ## 13. License
 
 This project is licensed under the MIT License. See `LICENSE`.
+
+
+## 14. Web UI
+
+A three-column React UI is available under `ui/`:
+- Left: meetings + artifacts
+- Center: transcript workspace (with search/ask input)
+- Right: studio actions + notes cards
+
+### Run API
+
+```bash
+source .venv/bin/activate
+uvicorn api.main:app --reload --port 8000
+```
+
+### Run UI
+
+```bash
+cd ui
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173`.
+The UI reads persisted artifacts from completed runs first.
+It also supports starting a new run from the left panel by providing an absolute source path.

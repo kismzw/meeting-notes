@@ -1,0 +1,46 @@
+:root {
+  --bg: #f5f6f8;
+  --panel: #ffffff;
+  --border: #dde1e6;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #1f6feb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: var(--text); background: var(--bg); }
+.layout { display: grid; grid-template-columns: 280px 1fr 360px; gap: 12px; height: 100vh; padding: 12px; }
+.left,.center,.right { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.left,.right { padding: 12px; overflow: auto; }
+.center { display: flex; flex-direction: column; }
+.toolbar { padding: 12px; border-bottom: 1px solid var(--border); }
+.toolbar input { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; }
+.transcript { padding: 8px 12px; overflow: auto; }
+.segment { display: grid; grid-template-columns: 110px 90px 1fr; gap: 10px; padding: 8px; border-bottom: 1px solid #eef0f2; font-size: 13px; }
+.time { color: var(--muted); font-variant-numeric: tabular-nums; }
+.speaker { color: #374151; font-weight: 600; }
+.text { line-height: 1.4; }
+h3 { margin: 10px 0; font-size: 14px; }
+.list { list-style: none; margin: 0; padding: 0; }
+.list button { width: 100%; text-align: left; padding: 8px; border: 1px solid var(--border); background: white; border-radius: 8px; margin-bottom: 6px; cursor: pointer; }
+.list button.active { border-color: var(--accent); background: #edf4ff; }
+.primary { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid var(--border); border-radius: 8px; background: #f9fafb; }
+.artifacts { font-size: 12px; color: #374151; }
+.artifacts ul { margin: 6px 0 10px; padding-left: 16px; }
+.actions { display: grid; gap: 8px; margin-bottom: 12px; }
+.actions button { padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: white; cursor: pointer; }
+.card { border: 1px solid var(--border); border-radius: 8px; padding: 10px; margin-bottom: 8px; background: #fcfcfd; }
+.card h4 { margin: 0 0 6px; font-size: 13px; }
+.card p, .card li { margin: 0; font-size: 12px; line-height: 1.4; }
+.card ul { margin: 0; padding-left: 16px; }
+.muted { color: var(--muted); font-size: 13px; }
+@media (max-width: 1200px) {
+  .layout { grid-template-columns: 240px 1fr; }
+  .right { grid-column: 1 / -1; height: 280px; }
+}
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; height: auto; min-height: 100vh; }
+  .left, .center, .right { min-height: 260px; }
+}
+
+.newMeeting { display: grid; gap: 8px; margin-bottom: 10px; }
+.newMeeting input { width: 100%; padding: 8px; border: 1px solid var(--border); border-radius: 8px; font-size: 12px; }
