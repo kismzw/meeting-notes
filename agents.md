@@ -1,5 +1,9 @@
 # agents.md
 
+> Note:
+> This document captures implementation responsibilities and engineering rules.
+> It is kept for maintainability and contributor guidance, including future roadmap items.
+
 ## Purpose
 
 This document defines the implementation agents, responsibilities, operating rules, handoff contracts, and delivery order for the meeting transcription and meeting-notes application.

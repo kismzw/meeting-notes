@@ -1,5 +1,9 @@
 # architecture.md
 
+> Note:
+> This document describes the target architecture and design intent.
+> Some sections include future/planned structure beyond the current MVP implementation.
+
 ## Overview
 
 This document defines the architecture for a local-first meeting transcription and meeting-notes application designed for long-term maintainability, backend/model swap-ability, and future app deployment.

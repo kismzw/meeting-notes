@@ -7,6 +7,11 @@ A local-first audio transcription and summarization pipeline.
 - Every stage persists artifacts to `artifacts/`
 - Restartable pipeline (reuses saved artifacts)
 
+## Design docs
+
+- Architecture: `architecture.md`
+- Implementation rules and responsibilities: `agents.md`
+
 ## 1. Requirements
 
 - macOS (Apple Silicon recommended)
