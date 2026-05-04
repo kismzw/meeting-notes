@@ -83,6 +83,8 @@ python -m application "/path/to/input.wav" --run-id run-001 --config-dir configs
 
 All outputs are saved under `artifacts/<run_id>/`.
 
+Note: `artifacts/` is gitignored, so generated outputs (including `export/*.pdf`) are not committed.
+
 Common outputs:
 - `ingest/audio_asset/*.json`
 - `canonicalize/audio_asset/*.json`
@@ -184,3 +186,8 @@ Use another terminal for `ollama pull` and pipeline execution.
 Inference runs locally.
 Network access may still occur for first-time model downloads.
 After model caching, runs are typically local-only.
+
+
+## 13. License
+
+This project is licensed under the MIT License. See `LICENSE`.
