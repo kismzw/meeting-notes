@@ -30,3 +30,8 @@ artifacts/
 # Environment files
 .env
 .env.*
+
+# Node / frontend
+ui/node_modules/
+ui/dist/
+ui/.vite/
