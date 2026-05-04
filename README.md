@@ -12,14 +12,6 @@ A local-first audio transcription and summarization pipeline.
 - Architecture: `architecture.md`
 - Implementation rules and responsibilities: `agents.md`
 
-## Layer responsibilities
-
-- `domain`: Core business types and rules. No model/provider imports.
-- `ports`: Abstract interfaces for pluggable components (ASR, VAD, storage, etc.).
-- `backends`: Concrete adapters that call external/model libraries and normalize outputs into domain types.
-- `application`: Pipeline orchestration and use cases. Depends on `domain` + `ports`, not provider SDKs.
-- `infrastructure`: Config loading, filesystem storage, and operational concerns.
-
 ## 1. Requirements
 
 - macOS (Apple Silicon recommended)
