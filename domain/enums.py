@@ -11,5 +11,6 @@ class PipelineStage(str, Enum):
     ASR = "asr"
     ALIGN = "align"
     NORMALIZE = "normalize"
+    POLISH = "polish"
     SUMMARIZE = "summarize"
     EXPORT = "export"

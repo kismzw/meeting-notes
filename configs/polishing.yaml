@@ -1,0 +1,26 @@
+enable_transcript_polish: true
+enable_web_search: true
+max_search_queries: 12
+max_search_results_per_query: 5
+auto_apply_threshold: 0.92
+review_threshold: 0.70
+reject_threshold: 0.70
+max_span_tokens: 6
+max_span_chars: 24
+min_phonetic_score: 0.60
+min_final_score: 0.70
+cache_search_results: true
+save_all_candidates: true
+top_k_suspicious_spans: 30
+model: qwen3:8b
+ollama_url: http://127.0.0.1:11434/api/generate
+
+
+scoring_weights:
+  phonetic: 0.40
+  topic: 0.20
+  context: 0.20
+  entity_consistency: 0.10
+  source: 0.10
+
+local_glossary_terms: []

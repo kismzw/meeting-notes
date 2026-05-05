@@ -22,7 +22,7 @@ asr-mlx = ["mlx-whisper>=0.4.3"]
 diarization = ["pyannote.audio>=3.3"]
 
 [tool.setuptools.packages.find]
-include = ["application*", "backends*", "domain*", "infrastructure*", "ports*"]
+include = ["application*", "backends*", "domain*", "infrastructure*", "ports*", "meeting_notes*"]
 exclude = ["tests*", "configs*"]
 
 [tool.pytest.ini_options]
